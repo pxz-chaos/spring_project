@@ -1,0 +1,5 @@
+重定向不能访问WEB-INF下的资源
+
+返回带有前缀的字符串:
+转发：forward:/WEB-INF/view/index.jsp
+重定向:redirect:/index.jsp

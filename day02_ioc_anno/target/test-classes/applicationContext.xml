@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--加载外部的properties文件-->
+    <context:property-placeholder location="classpath:jdbc1.properties"/>
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <!--注入参数采用set的方式-->
+        <property name="driverClass" value="${jdbc.driver}"></property>
+        <property name="jdbcUrl" value="${jdbc.url}"></property>
+        <property name="user" value="${jdbc.username}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+
+    </bean>
+
+    <!--   //创建数据源对象，设置参数
+         ComboPooledDataSource ds = new ComboPooledDataSource();
+         ds.setDriverClass(driver);
+         ds.setJdbcUrl(url);
+         ds.setUser(username);
+         ds.setPassword(password);-->
+    <!--配置c3p0数据库-->
+
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        &lt;!&ndash;注入参数采用set的方式&ndash;&gt;
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value="0712"></property>
+
+    </bean>-->
+
+    <!--使用druid的方式配置-->
+
+    <bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="0712"></property>
+    </bean>
+
+    <!--配置userDao-->
+ <!--   <bean id="userDao" class="com.peixin.dao.iml.UserDaoImpl"/>
+    &lt;!&ndash;配置userService&ndash;&gt;
+    <bean id="userService" class="com.peixin.service.impl.UserServiceImpl">
+        <property name="userDao" ref="userDao"></property>
+    </bean>-->
+    <!--采用注解的形式，在这里配置组件扫描，不然找不到注解，直接配置父类即可-->
+
+    <!--<context:component-scan base-package="com.peixin.dao.iml"></context:component-scan>
+    <context:component-scan base-package="com.peixin.service.impl"></context:component-scan>-->
+    <context:component-scan base-package="com.peixin"/>
+
+
+</beans>

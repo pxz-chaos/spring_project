@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--配置全包名-->
+
+    <!--
+    id:bean实例在spring容器中的唯一标识
+    class:全包名，也叫全限定名称
+    scope：指对象的作用范围
+        singleton：单例模式
+        prototype：多例模式
+    init-method：初始化方法名称
+    destroy-method：销毁方法名称
+
+    -->
+    <bean id="userDao" class="com.peixin.dao.impl.UserDaoImpl" scope="singleton" init-method="init"
+          destroy-method="destroy"></bean>
+
+</beans>

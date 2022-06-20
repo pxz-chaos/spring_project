@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--配置全包名-->
+    <!--采用无参构造的方法获得对象-->
+    <!--<bean id="userDao" class="com.peixin.dao.impl.UserDaoImpl"></bean>-->
+    <!--使用工厂模式-->
+    <!--<bean id="userDao" class="com.peixin.factory.StaticFactory" factory-method="getUserDao"></bean>-->
+
+    <!--  &lt;!&ndash;使用工厂模式动态方法实例化bean&ndash;&gt;
+      <bean id="factory" class="com.peixin.factory.DynamicFactory"></bean>
+      <bean id="userDao" factory-bean="factory" factory-method="getUserDao"></bean>-->
+
+    <!-- <bean id="userService" class="com.peixin.service.impl.UserServiceImpl"></bean>-->
+
+
+    <!--依赖注入，将userDao注入到userService层中，用set的方法-->
+    <!--方式1.1：-->
+    <bean id="userService" class="com.peixin.service.impl.UserServiceImpl">
+        <!--name就是setXXX后面的XXX，但是首字母小写-->
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+    <!--方式1.2：-->
+    <!--  <bean id="userService" class="com.peixin.service.impl.UserServiceImpl" p:userDao-ref="userDao"></bean>-->
+
+    <!--方式2：-->
+    <!--用构造方法来依赖注入-->
+    <!-- <bean id="userService" class="com.peixin.service.impl.UserServiceImpl">
+         <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+     </bean>-->
+
+    <!--
+       3.8 Bean的依赖注入的数据类型
+           上面的操作，都是注入的引用Bean，处了对象的引用可以注入，普通数据类型，集合等都可以在容器中进行注入。
+           注入数据的三种数据类型
+            普通数据类型
+            引用数据类型
+            集合数据类型
+           其中引用数据类型，此处就不再赘述了，之前的操作都是对UserDao对象的引用进行注入的，下面将以set方法注入为
+           例，演示普通数据类型和集合数据类型的注入。
+       -->
+
+    <bean id="userDao" class="com.peixin.dao.impl.UserDaoImpl">
+
+        <!--普通属性值用value-->
+        <property name="username" value="zhangsan"></property>
+        <property name="age" value="18"></property>
+        <property name="strList">
+            <!--如果list集合里面是普通数据类型，那么list标签里面使用value标签
+            如果是引用数据类型就使用ref标签-->
+            <list>
+                <value>"aaa"</value>
+                <value>"bbb"</value>
+                <value>"ccc"</value>
+            </list>
+        </property>
+
+        <property name="userMap">
+            <map>
+                <!--键值-->
+                <entry key="u1" value-ref="user1"></entry>
+                <entry key="u2" value-ref="user2"></entry>
+                <entry key="u3" value-ref="user3"></entry>
+            </map>
+        </property>
+
+        <property name="properties">
+            <props>
+                <prop key="p1">ppp1</prop>
+                <prop key="p2">ppp2</prop>
+                <prop key="p3">ppp3</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="user1" class="com.peixin.domain.User">
+        <property name="name" value="lisi"></property>
+        <property name="addr" value="Sichuan Chengdu"></property>
+    </bean>
+
+    <bean id="user2" class="com.peixin.domain.User">
+        <property name="name" value="lusi"></property>
+        <property name="addr" value="Sichuan Neijiang"></property>
+    </bean>
+    <bean id="user3" class="com.peixin.domain.User">
+        <property name="name" value="tom"></property>
+        <property name="addr" value="Sichuan Meishan"></property>
+    </bean>
+    <!--
+    总结：
+    引用类型使用ref注入依赖
+    普通数据类型使用value赋值注入依赖
+     -->
+    <!--分模块开发-->
+    <import resource="applicationContext-product.xml"/>
+    <import resource="applicationContext-user.xml"/>
+
+</beans>

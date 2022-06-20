@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/day04_spring_mvc" />
+    <file type="web" url="file://F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第三天资料/案例/itheima_spring_mvc" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/day01_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/day02_ioc_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/day03_spring_mvc/pom.xml" />
+        <option value="$PROJECT_DIR$/day04_spring_mvc/pom.xml" />
+        <option value="F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第三天资料/案例/itheima_spring_mvc/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="16" project-jdk-type="JavaSDK" />
+</project>
