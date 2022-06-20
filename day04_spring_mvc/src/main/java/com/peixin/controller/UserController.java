@@ -330,6 +330,7 @@ public class UserController {
         String originalFilename = multipartFile.getOriginalFilename();
         //保存文件
         multipartFile.transferTo(new File("f:\\upload\\"+originalFilename));
+        System.out.println("tijiao");
 
     }
 }
