@@ -15,10 +15,11 @@
 <body>
 <%--enctype默认="application/x-www-form-urlencoded"
 这里采用enctype="multipart/form-data"即多部分表单时，request.getParameter()将失效--%>
-<form action="${pageContext.request.contextPath}/user/quick23" method="post"  enctype="multipart/form-data" >
+<form action="${pageContext.request.contextPath}/user/quick24" method="post"  enctype="multipart/form-data" >
 
     名称：<input type="text" name="username"><br/>
-    文件：<input type="file" placeholder="请上传文件" name="multipartFile"><br/>
+    文件1：<input type="file" placeholder="请上传文件" name="multipartFile"><br/>
+    文件2：<input type="file" placeholder="请上传文件" name="multipartFile"><br/>
     <input type="submit" value="提交">
 </form>
 </body>

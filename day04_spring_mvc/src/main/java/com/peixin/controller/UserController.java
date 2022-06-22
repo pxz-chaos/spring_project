@@ -252,7 +252,7 @@ public class UserController {
 
     @RequestMapping(value = "/quick19")
     @ResponseBody
-    public void save19(HttpServletRequest request, HttpServletResponse response, HttpSession session)  {
+    public void save19(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
         //http://localhost:8080/user/quick19
         System.out.println(request);
         System.out.println(response);
@@ -263,19 +263,21 @@ public class UserController {
     //获取请求头
     @RequestMapping(value = "/quick20")
     @ResponseBody
-    public void save20(@RequestHeader(value = "User-Agent",required = false) String user_agent)  {
+    public void save20(@RequestHeader(value = "User-Agent", required = false) String user_agent) {
         //http://localhost:8080/user/quick20
         System.out.println(user_agent);
 
     }
+
     //获取请求头
     @RequestMapping(value = "/quick21")
     @ResponseBody
-    public void save21(@CookieValue(value = "JSESSIONID") String jsessionId)  {
+    public void save21(@CookieValue(value = "JSESSIONID") String jsessionId) {
         //http://localhost:8080/user/quick21
         System.out.println(jsessionId);
 
     }
+
     //文件上传
     /*
     文件上传三要素：
@@ -285,7 +287,7 @@ public class UserController {
      */
     @RequestMapping(value = "/quick22")
     @ResponseBody
-    public void save22()  {
+    public void save22() {
 
 
     }
@@ -322,15 +324,35 @@ public class UserController {
      */
     @RequestMapping(value = "/quick23")
     @ResponseBody
-    public void save23(String username, MultipartFile multipartFile) throws IOException  {
+    public void save23(String username, MultipartFile multipartFile) throws IOException {
 
         System.out.println(username);
         System.out.println(multipartFile);
         //获取文件名称
         String originalFilename = multipartFile.getOriginalFilename();
         //保存文件
-        multipartFile.transferTo(new File("f:\\upload\\"+originalFilename));
+        multipartFile.transferTo(new File("f:\\upload\\" + originalFilename));
         System.out.println("tijiao");
 
     }
+
+    //多文件上传
+    @RequestMapping(value = "/quick24")
+    @ResponseBody
+    public void save24(String username, MultipartFile[] multipartFile) throws IOException {
+
+        System.out.println(username);
+        System.out.println(multipartFile);
+        for (MultipartFile file : multipartFile) {
+            //获取文件名称
+            String originalFilename = file.getOriginalFilename();
+            //保存文件
+            file.transferTo(new File("f:\\upload\\" + originalFilename));
+
+        }
+
+
+    }
+
+
 }
