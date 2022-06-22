@@ -9,10 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1f2149-2fb3-4cb5-88c1-cf829c23a622" name="Changes" comment="test">
+    <list default="true" id="9a1f2149-2fb3-4cb5-88c1-cf829c23a622" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/day05_spring_jdbc_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/day05_spring_jdbc_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/day05_spring_jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day04_spring_mvc/src/main/java/com/peixin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/day04_spring_mvc/src/main/java/com/peixin/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day04_spring_mvc/src/main/webapp/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/day04_spring_mvc/src/main/webapp/upload.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,12 +76,15 @@
     </option>
   </component>
   <component name="ProjectId" id="29hNluTaZVCMdLBrVKQITMzouBx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -83,7 +98,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.11148272" />
     <property name="project.structure.side.proportion" value="0.27979925" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -111,7 +126,7 @@
       <recent name="com.peixin.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.apache-tomcat-9.0.62">
+  <component name="RunManager" selected="JUnit.JDBCTemplateTest.test1">
     <configuration name="UserServiceController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.peixin.controller.UserServiceController" />
       <module name="day03_spring_mvc" />
@@ -128,8 +143,8 @@
     <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="SpringJunitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day02" />
+    <configuration name="JDBCTemplateTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day05_spring_jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.peixin.test.*" />
@@ -137,8 +152,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.peixin.test" />
-      <option name="MAIN_CLASS_NAME" value="com.peixin.test.SpringJunitTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -267,18 +283,18 @@
     <list>
       <item itemvalue="Application.UserServiceController" />
       <item itemvalue="HTTP Request.generated-requests#2" />
-      <item itemvalue="JUnit.SpringJunitTest" />
       <item itemvalue="JUnit.SpringJunitTest.test1" />
       <item itemvalue="JUnit.SpringJunitTest.test2" />
       <item itemvalue="Tomcat Server.apache-tomcat-9.0.62" />
+      <item itemvalue="JUnit.JDBCTemplateTest.test1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCTemplateTest.test1" />
         <item itemvalue="HTTP Request.generated-requests#2" />
         <item itemvalue="Application.UserServiceController" />
         <item itemvalue="JUnit.SpringJunitTest.test2" />
         <item itemvalue="JUnit.SpringJunitTest.test1" />
-        <item itemvalue="JUnit.SpringJunitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -300,7 +316,7 @@
       <workItem from="1654432147874" duration="5559000" />
       <workItem from="1655188598601" duration="20988000" />
       <workItem from="1655699849828" duration="7153000" />
-      <workItem from="1655899456217" duration="1572000" />
+      <workItem from="1655899456217" duration="4101000" />
     </task>
     <task id="LOCAL-00001" summary="新增了一行代码">
       <created>1655700641965</created>
@@ -337,17 +353,26 @@
       <option name="project" value="LOCAL" />
       <updated>1655888634370</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增多文件上传代码">
+      <created>1655903790889</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655903790889</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="新增了一行代码" />
     <MESSAGE value="新增一个测试类" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="新增多文件上传代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增多文件上传代码" />
   </component>
 </project>

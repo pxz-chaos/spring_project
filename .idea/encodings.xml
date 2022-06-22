@@ -7,6 +7,10 @@
     <file url="file://$PROJECT_DIR$/day02_ioc_anno/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day04_spring_mvc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/day04_spring_mvc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day05_spring_jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day05_spring_jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/domain/Account.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateTest.java" charset="UTF-8" />
     <file url="file://F:/Peixin/leetCodePractise/LeetCode-Practise/main/src/ArraySort/Demo01ArraySort.java" charset="UTF-8" />
     <file url="file://F:/Peixin/leetCodePractise/LeetCode-Practise/main/src/ArraySort/main.java" charset="UTF-8" />
     <file url="file://F:/Peixin/leetCodePractise/LeetCode-Practise/main/src/CountStr/Demo01CountStr.java" charset="UTF-8" />
@@ -72,6 +76,6 @@
     <file url="file://F:/Peixin/leetCodePractise/LeetCode-Practise/main/src/链表/_707_设计链表2.java" charset="UTF-8" />
     <file url="file://F:/Peixin/leetCodePractise/LeetCode-Practise/main/src/链表/_83_删除排序链表中的重复元素.java" charset="UTF-8" />
     <file url="file://F:/Peixin/leetCodePractise/LeetCode-Practise/main/src/队列/_225_用队列实现栈.java" charset="UTF-8" />
-    <file url="PROJECT" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
