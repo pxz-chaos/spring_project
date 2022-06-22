@@ -10,21 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1f2149-2fb3-4cb5-88c1-cf829c23a622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/day05_spring_jdbc_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/day05_spring_jdbc_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/day05_spring_jdbc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +25,9 @@
       <list>
         <option value="Interface" />
         <option value="web.xml" />
-        <option value="spring-beans.schema" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -94,11 +83,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="F:/Peixin/leetCodePractise/LeetCode-Practise/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.11148272" />
     <property name="project.structure.side.proportion" value="0.27979925" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -106,11 +95,11 @@
       <recent name="com.peixin.dao.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\spring_project\day05_spring_jdbc\src\test\resources" />
       <recent name="E:\spring_project\day04_spring_mvc\src\main\webapp" />
       <recent name="E:\spring_project\day04_spring_mvc\src\main\webapp\js" />
       <recent name="E:\spring_project\day04_spring_mvc\src\main\resources" />
       <recent name="E:\spring_project\day04_spring_mvc\src\main" />
-      <recent name="E:\spring_project\day03_spring_mvc\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\spring_project\day04_spring_mvc\src\main\webapp\js" />
@@ -126,7 +115,7 @@
       <recent name="com.peixin.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTemplateTest.test1">
+  <component name="RunManager" selected="JUnit.JDBCTemplateTest.test02">
     <configuration name="UserServiceController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.peixin.controller.UserServiceController" />
       <module name="day03_spring_mvc" />
@@ -143,6 +132,22 @@
     <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
       <method v="2" />
     </configuration>
+    <configuration name="JDBCTemplateTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day05_spring_jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peixin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peixin.test" />
+      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateTest" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JDBCTemplateTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day05_spring_jdbc" />
       <extension name="coverage">
@@ -153,22 +158,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.peixin.test" />
       <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpringJunitTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day02" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peixin.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.peixin.test" />
-      <option name="MAIN_CLASS_NAME" value="com.peixin.test.SpringJunitTest" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -283,18 +272,18 @@
     <list>
       <item itemvalue="Application.UserServiceController" />
       <item itemvalue="HTTP Request.generated-requests#2" />
-      <item itemvalue="JUnit.SpringJunitTest.test1" />
       <item itemvalue="JUnit.SpringJunitTest.test2" />
       <item itemvalue="Tomcat Server.apache-tomcat-9.0.62" />
       <item itemvalue="JUnit.JDBCTemplateTest.test1" />
+      <item itemvalue="JUnit.JDBCTemplateTest.test02" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JDBCTemplateTest.test02" />
         <item itemvalue="JUnit.JDBCTemplateTest.test1" />
         <item itemvalue="HTTP Request.generated-requests#2" />
         <item itemvalue="Application.UserServiceController" />
         <item itemvalue="JUnit.SpringJunitTest.test2" />
-        <item itemvalue="JUnit.SpringJunitTest.test1" />
       </list>
     </recent_temporary>
   </component>
@@ -316,7 +305,7 @@
       <workItem from="1654432147874" duration="5559000" />
       <workItem from="1655188598601" duration="20988000" />
       <workItem from="1655699849828" duration="7153000" />
-      <workItem from="1655899456217" duration="4101000" />
+      <workItem from="1655899456217" duration="6337000" />
     </task>
     <task id="LOCAL-00001" summary="新增了一行代码">
       <created>1655700641965</created>
@@ -360,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655903790889</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="spring-JDBCTemplate使用">
+      <created>1655906268888</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655906268888</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,6 +369,7 @@
     <MESSAGE value="新增一个测试类" />
     <MESSAGE value="test" />
     <MESSAGE value="新增多文件上传代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增多文件上传代码" />
+    <MESSAGE value="spring-JDBCTemplate使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring-JDBCTemplate使用" />
   </component>
 </project>

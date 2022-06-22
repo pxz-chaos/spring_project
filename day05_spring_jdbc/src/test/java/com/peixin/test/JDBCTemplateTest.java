@@ -2,6 +2,7 @@ package com.peixin.test;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.junit.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class JDBCTemplateTest {
@@ -31,5 +32,17 @@ public class JDBCTemplateTest {
         //执行操作
         int row =template.update("insert  into account values(?,?,?)",null,"tom",300);
         System.out.println(row);
+    }
+
+    @Test
+    //使用spring框架
+    public void test02(){
+        ClassPathXmlApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
+        JdbcTemplate template = app.getBean(JdbcTemplate.class);
+
+        //执行操作
+        int row =template.update("insert  into account values(?,?,?)",null,"tom",300);
+        System.out.println(row);
+
     }
 }
