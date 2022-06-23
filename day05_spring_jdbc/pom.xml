@@ -5,11 +5,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.peixin</groupId>
-  <artifactId>day04_spring_mvc</artifactId>
+  <artifactId>day05_spring_jdbc</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>war</packaging>
 
-  <name>day04_spring_mvc Maven Webapp</name>
+  <name>day05_spring_jdbc Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 

@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1f2149-2fb3-4cb5-88c1-cf829c23a622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/jdbc.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day05_spring_jdbc/target/test-classes" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.11148272" />
     <property name="project.structure.side.proportion" value="0.27979925" />
@@ -95,11 +94,11 @@
       <recent name="com.peixin.dao.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\spring_project\day05_spring_jdbc\target\test-classes" />
       <recent name="E:\spring_project\day05_spring_jdbc\src\test\resources" />
       <recent name="E:\spring_project\day04_spring_mvc\src\main\webapp" />
       <recent name="E:\spring_project\day04_spring_mvc\src\main\webapp\js" />
       <recent name="E:\spring_project\day04_spring_mvc\src\main\resources" />
-      <recent name="E:\spring_project\day04_spring_mvc\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\spring_project\day04_spring_mvc\src\main\webapp\js" />
@@ -305,7 +304,7 @@
       <workItem from="1654432147874" duration="5559000" />
       <workItem from="1655188598601" duration="20988000" />
       <workItem from="1655699849828" duration="7153000" />
-      <workItem from="1655899456217" duration="6337000" />
+      <workItem from="1655899456217" duration="7264000" />
     </task>
     <task id="LOCAL-00001" summary="新增了一行代码">
       <created>1655700641965</created>
@@ -356,7 +355,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655906268888</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="spring-JDBCTemplate使用">
+      <created>1655908540723</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655908540723</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
