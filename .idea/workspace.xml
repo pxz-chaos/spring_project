@@ -10,9 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a1f2149-2fb3-4cb5-88c1-cf829c23a622" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateCRUDTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/domain/Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +25,8 @@
         <option value="Interface" />
         <option value="web.xml" />
         <option value="Jsp File" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -114,24 +114,8 @@
       <recent name="com.peixin.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTemplateTest.test02">
-    <configuration name="UserServiceController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.peixin.controller.UserServiceController" />
-      <module name="day03_spring_mvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.peixin.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="generated-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="JDBCTemplateTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.JDBCTemplateCRUDTest.testQueryCount">
+    <configuration name="JDBCTemplateCRUDTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day05_spring_jdbc" />
       <extension name="coverage">
         <pattern>
@@ -140,14 +124,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.peixin.test" />
-      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateTest" />
-      <option name="METHOD_NAME" value="test02" />
+      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateCRUDTest" />
+      <option name="METHOD_NAME" value="testDelete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCTemplateTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JDBCTemplateCRUDTest.testQuery" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day05_spring_jdbc" />
       <extension name="coverage">
         <pattern>
@@ -156,15 +140,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.peixin.test" />
-      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateTest" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateCRUDTest" />
+      <option name="METHOD_NAME" value="testQuery" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringJunitTest.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day02" />
+    <configuration name="JDBCTemplateCRUDTest.testQueryCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day05_spring_jdbc" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.peixin.test.*" />
@@ -172,8 +156,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.peixin.test" />
-      <option name="MAIN_CLASS_NAME" value="com.peixin.test.SpringJunitTest" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateCRUDTest" />
+      <option name="METHOD_NAME" value="testQueryCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTemplateCRUDTest.testQuerySingle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day05_spring_jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peixin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peixin.test" />
+      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateCRUDTest" />
+      <option name="METHOD_NAME" value="testQuerySingle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTemplateCRUDTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day05_spring_jdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.peixin.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.peixin.test" />
+      <option name="MAIN_CLASS_NAME" value="com.peixin.test.JDBCTemplateCRUDTest" />
+      <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -269,20 +285,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.UserServiceController" />
-      <item itemvalue="HTTP Request.generated-requests#2" />
-      <item itemvalue="JUnit.SpringJunitTest.test2" />
       <item itemvalue="Tomcat Server.apache-tomcat-9.0.62" />
-      <item itemvalue="JUnit.JDBCTemplateTest.test1" />
-      <item itemvalue="JUnit.JDBCTemplateTest.test02" />
+      <item itemvalue="JUnit.JDBCTemplateCRUDTest.testUpdate" />
+      <item itemvalue="JUnit.JDBCTemplateCRUDTest.testDelete" />
+      <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQuery" />
+      <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQuerySingle" />
+      <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQueryCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JDBCTemplateTest.test02" />
-        <item itemvalue="JUnit.JDBCTemplateTest.test1" />
-        <item itemvalue="HTTP Request.generated-requests#2" />
-        <item itemvalue="Application.UserServiceController" />
-        <item itemvalue="JUnit.SpringJunitTest.test2" />
+        <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQueryCount" />
+        <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQuerySingle" />
+        <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQuery" />
+        <item itemvalue="JUnit.JDBCTemplateCRUDTest.testUpdate" />
+        <item itemvalue="JUnit.JDBCTemplateCRUDTest.testDelete" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +320,7 @@
       <workItem from="1654432147874" duration="5559000" />
       <workItem from="1655188598601" duration="20988000" />
       <workItem from="1655699849828" duration="7153000" />
-      <workItem from="1655899456217" duration="7264000" />
+      <workItem from="1655899456217" duration="9654000" />
     </task>
     <task id="LOCAL-00001" summary="新增了一行代码">
       <created>1655700641965</created>
@@ -362,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655908540723</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="spring-JDBCTemplate使用">
+      <created>1655949141000</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655949141000</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,16 +1,16 @@
 package com.peixin.domain;
 
 public class Account {
-    private String name;
+    private String username;
     private double money;
 
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public double getMoney() {
@@ -24,7 +24,7 @@ public class Account {
     @Override
     public String toString() {
         return "Account{" +
-                "name='" + name + '\'' +
+                "username='" + username + '\'' +
                 ", money=" + money +
                 '}';
     }
