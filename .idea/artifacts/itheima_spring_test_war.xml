@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="itheima_spring_test:war">
+    <output-path>F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第六天资料/案例/itheima_spring_test/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>false</exploded>
+        <module>itheima_spring_test</module>
+        <packaging>war</packaging>
+        <unpackNestedArchives>false</unpackNestedArchives>
+      </options>
+    </properties>
+    <root id="archive" name="itheima_spring_test-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="itheima_spring_test:war exploded" />
+    </root>
+  </artifact>
+</component>
