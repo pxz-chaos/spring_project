@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="day04_spring_mvc:war exploded" />
+      <artifact name="day05_spring_test:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a1f2149-2fb3-4cb5-88c1-cf829c23a622" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/test/JDBCTemplateCRUDTest.java" afterDir="false" />
+    <list default="true" id="9a1f2149-2fb3-4cb5-88c1-cf829c23a622" name="Changes" comment="initial Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/day05_spring_jdbc/src/test/java/com/peixin/domain/Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +24,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="web.xml" />
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -82,14 +84,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day05_spring_jdbc/target/test-classes" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第六天资料/案例/itheima_spring_test/pom.xml" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.11148272" />
     <property name="project.structure.side.proportion" value="0.27979925" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.peixin.dao" />
+      <recent name="com.peixin.service" />
       <recent name="com.peixin" />
       <recent name="com.peixin.dao.impl" />
     </key>
@@ -114,7 +118,7 @@
       <recent name="com.peixin.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JDBCTemplateCRUDTest.testQueryCount">
+  <component name="RunManager" selected="Tomcat Server.apache-tomcat-9.0.62">
     <configuration name="JDBCTemplateCRUDTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day05_spring_jdbc" />
       <extension name="coverage">
@@ -196,11 +200,9 @@
       </method>
     </configuration>
     <configuration name="apache-tomcat-9.0.62" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="apache-tomcat-9.0.62" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="day04_spring_mvc:war exploded">
+        <artifact name="day05_spring_test:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -280,17 +282,17 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="day04_spring_mvc:war exploded" />
+          <artifact name="day05_spring_test:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.apache-tomcat-9.0.62" />
       <item itemvalue="JUnit.JDBCTemplateCRUDTest.testUpdate" />
       <item itemvalue="JUnit.JDBCTemplateCRUDTest.testDelete" />
       <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQuery" />
       <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQuerySingle" />
       <item itemvalue="JUnit.JDBCTemplateCRUDTest.testQueryCount" />
+      <item itemvalue="Tomcat Server.apache-tomcat-9.0.62" />
     </list>
     <recent_temporary>
       <list>
@@ -320,7 +322,7 @@
       <workItem from="1654432147874" duration="5559000" />
       <workItem from="1655188598601" duration="20988000" />
       <workItem from="1655699849828" duration="7153000" />
-      <workItem from="1655899456217" duration="9654000" />
+      <workItem from="1655899456217" duration="33169000" />
     </task>
     <task id="LOCAL-00001" summary="新增了一行代码">
       <created>1655700641965</created>
@@ -385,7 +387,28 @@
       <option name="project" value="LOCAL" />
       <updated>1655949141000</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="spring-JDBCTemplate的DML语句">
+      <created>1655951830151</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655951830151</updated>
+    </task>
+    <task id="LOCAL-00011" summary=".iml修改">
+      <created>1656049630529</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656049630529</updated>
+    </task>
+    <task id="LOCAL-00012" summary="initial Commit">
+      <created>1656050355478</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656050355478</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,6 +422,10 @@
     <MESSAGE value="test" />
     <MESSAGE value="新增多文件上传代码" />
     <MESSAGE value="spring-JDBCTemplate使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring-JDBCTemplate使用" />
+    <MESSAGE value="spring-JDBCTemplate的DML语句" />
+    <MESSAGE value="实例" />
+    <MESSAGE value=".iml修改" />
+    <MESSAGE value="initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial Commit" />
   </component>
 </project>
