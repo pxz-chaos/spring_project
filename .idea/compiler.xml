@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="day04_spring_mvc" />
-        <module name="day05_spring_jdbc" />
         <module name="day02" />
         <module name="day01" />
         <module name="itheima_spring_mvc" />
+        <module name="itheima_spring_test" />
+        <module name="day05_spring_jdbc" />
+        <module name="day05_spring_test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,7 +20,9 @@
       <module name="day02" target="1.8" />
       <module name="day04_spring_mvc" target="16" />
       <module name="day05_spring_jdbc" target="16" />
+      <module name="day05_spring_test" target="16" />
       <module name="itheima_spring_mvc" target="16" />
+      <module name="itheima_spring_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
