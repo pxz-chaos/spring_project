@@ -36,11 +36,11 @@ public class UserDaoImpl implements UserDao {
             public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
                 //使用原始的jdbc完成PreparedStatement的组件
                 PreparedStatement preparedStatement = con.prepareStatement("insert into sys_user values(?,?,?,?,?)", PreparedStatement.RETURN_GENERATED_KEYS);
-                preparedStatement.setObject(1,null);
-                preparedStatement.setString(2,user.getUsername());
-                preparedStatement.setObject(3,user.getEmail());
-                preparedStatement.setString(4,user.getPassword());
-                preparedStatement.setString(5,user.getPhoneNum());
+                preparedStatement.setObject(1, null);
+                preparedStatement.setString(2, user.getUsername());
+                preparedStatement.setObject(3, user.getEmail());
+                preparedStatement.setString(4, user.getPassword());
+                preparedStatement.setString(5, user.getPhoneNum());
 
                 return preparedStatement;
             }
@@ -48,7 +48,7 @@ public class UserDaoImpl implements UserDao {
 
         //2.创建keyHolder
         GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
-        jdbcTemplate.update(creator,keyHolder);
+        jdbcTemplate.update(creator, keyHolder);
 
         //获得生成的主键
         long userId = keyHolder.getKey().longValue();
@@ -65,5 +65,15 @@ public class UserDaoImpl implements UserDao {
             jdbcTemplate.update("insert into  sys_user_role values(?,?) ", userId, roleId);
         }
 
+    }
+
+    @Override
+    public void delUserRoleRel(Long userId) {
+        jdbcTemplate.update("delete from sys_user_role where userId=?", userId);
+    }
+
+    @Override
+    public void del(Long userId) {
+        jdbcTemplate.update("delete from sys_user where id=?", userId);
     }
 }

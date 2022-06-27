@@ -62,7 +62,7 @@
 
 	<script>
 		function delUser(userId){
-		    if(confirm("您确认要删除吗")){
+		    if(confirm("您确认要删除吗?")){
 		        location.href="${pageContext.request.contextPath}/user/del/"+userId;
 			}
 		}
