@@ -24,6 +24,15 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public void del(Long userId) {
+        //删除关系表，也就是sys_user_role中间表
+        userDao.delUserRoleRel(userId);
+
+        //删除sys_user主表
+        userDao.del(userId);
+    }
+
+    @Override
     public List<User> list() {
         List<User> userList = userDao.findAll();
         //封装userList中的每一个User的roles数据
