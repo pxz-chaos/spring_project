@@ -24,3 +24,8 @@ controller做的工作有：
 2. 连接业务层service，找spring要：private XxxService xxxService;
 3. 展示页面：创建方法，设置ModelAndView 并返回模型视图
 
+### 拦截器知识要点
+1. 创建拦截器类实现HandlerInterceptor接口
+2. 在spring-mvc.xml配置拦截器
+3. 测试拦截器效果
+
