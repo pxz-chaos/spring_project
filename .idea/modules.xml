@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://F:/Peixin/leetCodePractise/LeetCode-Practise/main/LeetCode-Practise.iml" filepath="F:/Peixin/leetCodePractise/LeetCode-Practise/main/LeetCode-Practise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day01_ioc/day01.iml" filepath="$PROJECT_DIR$/day01_ioc/day01.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day02_ioc_anno/day02.iml" filepath="$PROJECT_DIR$/day02_ioc_anno/day02.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day04_spring_mvc/day04_spring_mvc.iml" filepath="$PROJECT_DIR$/day04_spring_mvc/day04_spring_mvc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/day05_spring_jdbc/day05_spring_jdbc.iml" filepath="$PROJECT_DIR$/day05_spring_jdbc/day05_spring_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/day05_spring_test/day05_spring_test.iml" filepath="$PROJECT_DIR$/day05_spring_test/day05_spring_test.iml" />
-      <module fileurl="file://F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第三天资料/案例/itheima_spring_mvc/itheima_spring_mvc.iml" filepath="F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第三天资料/案例/itheima_spring_mvc/itheima_spring_mvc.iml" />
-      <module fileurl="file://F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第六天资料/案例/itheima_spring_test/itheima_spring_test.iml" filepath="F:/LearningMaterials/CodeStudy/JAVA学习/javaweb配套资料/SSM/第六天资料/案例/itheima_spring_test/itheima_spring_test.iml" />
     </modules>
   </component>
 </project>

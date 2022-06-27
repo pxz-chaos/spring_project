@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="day05_spring_test-1.0-SNAPSHOT.war">
+    <root id="archive" name="day04_spring_mvc.war">
       <element id="artifact" artifact-name="day05_spring_test:war exploded" />
     </root>
   </artifact>
