@@ -55,5 +55,19 @@ public class UserServiceImpl implements UserService {
         userDao.saveUserRoleRel(userId, roleIds);
     }
 
+    @Override
+    public User login(String username, String password) {
+
+        //try catch的快捷键Ctrl+alt+t
+        User user = null;
+        try {
+            user = userDao.findByUsernameAndPassword(username, password);
+            return user;
+        } catch (Exception e) {
+           return null;
+        }
+
+    }
+
 
 }

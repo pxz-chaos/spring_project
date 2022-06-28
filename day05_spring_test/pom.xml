@@ -55,12 +55,7 @@
       <version>5.3.18</version>
     </dependency>
 
-    <!--spring框架-->
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-test</artifactId>
-      <version>5.3.18</version>
-    </dependency>
+
 
     <!--web服务层-->
     <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
