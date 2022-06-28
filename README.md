@@ -29,3 +29,12 @@ controller做的工作有：
 2. 在spring-mvc.xml配置拦截器
 3. 测试拦截器效果
 
+### springMVC异常处理
+#### 异常处理方式
+①、配置简单异常处理器SimpleMappingExceptionResolver
+②、自定义异常处理器
+#### 自定义异常处理步骤
+①、创建异常处理器类实现HandlerExceptionResolver
+②、配置异常处理器
+③、编写异常页面
+④、测试异常跳转
