@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+                            http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+    <!--1.目标对象-->
+    <bean id="target" class="com.peixin.aop.Target"/>
+
+    <!--2.切面对象-->
+    <bean id="myAspect" class="com.peixin.aop.MyAspect"/>
+
+    <!--3.配置织入：
+    告诉spring框架 那些方法（切点） 需要进行那些增强（前置增强、后置增强、环绕增强...）-->
+    <!--所以需要aop的命名空间-->
+
+    <aop:config>
+
+        <!--声明切面-->
+        <aop:aspect ref="myAspect">
+
+            <!--切面：切点+通知-->
+
+            <!--抽取切点表达式-->
+            <aop:pointcut id="myPointcut" expression="execution(* com.peixin.aop.*.*(..))"/>
+
+            <!--前置增强-->
+            <!--<aop:before method="before" pointcut="execution(public void com.peixin.aop.Target.save())"/>-->
+            <!--<aop:before method="before" pointcut="execution(* com.peixin.aop.*.*(..))"/>-->
+
+            <aop:before method="before" pointcut-ref="myPointcut"/>
+            <!--后置增强-->
+            <aop:after-returning method="afterRetuning" pointcut="execution(* com.peixin.aop.*.*(..))"/>
+
+            <!--环绕增强-->
+            <aop:around method="around" pointcut="execution(* com.peixin.aop.*.*(..))"/>
+            <!--上面那行代码代表：你在执行save方法时，需要进行前置增强，前置增强的方法为before-->
+
+            <!--异常增强-->
+            <aop:after-throwing method="afterThrowing" pointcut="execution(* com.peixin.aop.*.*(..))"/>
+
+            <!--最终增强-->
+            <aop:after method="after" pointcut="execution(* com.peixin.aop.*.*(..))"/>
+
+
+            <!--
+            "execution(public void com.peixin.aop.Target.save())"称为切点表达式
+            一般表达式：execution([修饰符] 返回值类型 包名.类名.方法名(参数))
+            ①、访问修饰符可以省略
+            ②、返回值、包名、类名、方法名可以使用"*"号代表任意
+            ③、包名与类名之间一个"."代表当前包下的类，两个点..表示当前及其子包下的类
+            ④、参数列表可以使用".."表示任意个数，任意类型的参数列表
+
+            例子：
+            execution(public void com.peixin.aop.Target.save()) -save方法
+            execution(public void com.peixin.aop.Target.*(..) ) -com.peixin.aop.Target下的任意方法，任意参数
+            execution(*  com.peixin.aop.Target.*(..))       -com.peixin.aop.Target下的任意方法，任意参数，任意返回值
+           （最常用）execution(*  com.peixin.aop.*.*(..))           -com.peixin.aop下的任意包，任意方法，任意参数，任意返回值
+            execution(*  com.peixin.aop..*.*(..))           -com.peixin.aop下的任意包及其子包，任意方法，任意参数，任意返回值
+            execution(*  *..*.*(..))                        -任意..
+            -->
+
+        </aop:aspect>
+
+    </aop:config>
+</beans>
